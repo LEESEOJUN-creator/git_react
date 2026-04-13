@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
-import sampleImage from "../assets/calcu.png";
+import sampleImage from "../assets/my_calcu.png";
 
 /**
  * 프로젝트 페이지 컴포넌트
