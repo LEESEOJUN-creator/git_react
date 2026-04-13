@@ -15,28 +15,35 @@ const LoginPage = ({ onLogin }) => {
   };
 
   return (
-    <div className="login-container">
-      <h2>로그인</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>아이디:</label>
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
+    <div className="login-wrapper">
+      <div className="login-container">
+        <div className="login-header">
+          <h2>🔐 포트폴리오 로그인</h2>
+          <p className="login-subtitle">계속하려면 로그인하세요</p>
         </div>
-        <div>
-          <label>비밀번호:</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
-        {error && <p className="error">{error}</p>}
-        <button type="submit">로그인</button>
-      </form>
+        <form onSubmit={handleSubmit}>
+          <div className="input-group">
+            <label>아이디</label>
+            <input
+              type="text"
+              value={username}
+              placeholder="아이디를 입력하세요"
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </div>
+          <div className="input-group">
+            <label>비밀번호</label>
+            <input
+              type="password"
+              value={password}
+              placeholder="비밀번호를 입력하세요"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+          {error && <p className="error">{error}</p>}
+          <button type="submit" className="login-btn">로그인</button>
+        </form>
+      </div>
     </div>
   );
 };

@@ -22,6 +22,11 @@ const ProjectsPage = () => {
       description: "나만의 맛집 저장리스트 ~~",
       link: "https://map.naver.com/p/entry/place/18697937?c=15.00,0,0,0,dh",
     },
+    {
+      title: "나의 프로젝트4",
+      description: "React로 제작한 개인 포트폴리오 웹사이트. 로그인 기능과 다양한 페이지로 구성되어 있습니다.",
+      link: "https://github.com/LEESEOJUN-creator/git_react",
+    },
   ];
 
   return (
